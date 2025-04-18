@@ -16,6 +16,9 @@ import tqdm
 import torch
 from transformers import AutoTokenizer, AutoModel
 
+ARTICLE_ENCODER_PATH = "/data/kmxu/TrialGPT/models/MedCPT-Article-Encoder"
+QUERY_ENCODER_PATH = "/data/kmxu/TrialGPT/models/MedCPT-Query-Encoder"
+
 def get_bm25_corpus_index(corpus):
 	corpus_path = os.path.join(f"trialgpt_retrieval/bm25_corpus_{corpus}.json")
 
@@ -68,8 +71,8 @@ def get_medcpt_corpus_index(corpus):
 		embeds = []
 		corpus_nctids = []
 
-		model = AutoModel.from_pretrained("ncbi/MedCPT-Article-Encoder").to("cuda")
-		tokenizer = AutoTokenizer.from_pretrained("ncbi/MedCPT-Article-Encoder")
+		model = AutoModel.from_pretrained(ARTICLE_ENCODER_PATH, trust_remote_code=True, use_safetensors=False).to("cuda")
+		tokenizer = AutoTokenizer.from_pretrained(ARTICLE_ENCODER_PATH, trust_remote_code=True)
 
 		with open(f"dataset/{corpus}/corpus.jsonl", "r") as f:
 			print("Encoding the corpus")
@@ -129,15 +132,16 @@ if __name__ == "__main__":
 	_, _, qrels = GenericDataLoader(data_folder=f"dataset/{corpus}/").load(split="test")
 
 	# loading all types of queries
-	id2queries = json.load(open(f"dataset/{corpus}/id2queries.json"))
+	# id2queries = json.load(open(f"dataset/{corpus}/id2queries.json"))
+	id2queries = json.load(open(f"/data/kmxu/TrialGPT/results/retrieval_keywords_deepseek/deepseek-r1/community_{corpus}.json"))
 
 	# loading the indices
 	bm25, bm25_nctids = get_bm25_corpus_index(corpus)
 	medcpt, medcpt_nctids = get_medcpt_corpus_index(corpus)
 
 	# loading the query encoder for MedCPT
-	model = AutoModel.from_pretrained("ncbi/MedCPT-Query-Encoder").to("cuda")
-	tokenizer = AutoTokenizer.from_pretrained("ncbi/MedCPT-Query-Encoder")
+	model = AutoModel.from_pretrained(QUERY_ENCODER_PATH).to("cuda")
+	tokenizer = AutoTokenizer.from_pretrained(QUERY_ENCODER_PATH)
 	
 	# then conduct the searches, saving top 1k
 	output_path = f"results/qid2nctids_results_{q_type}_{corpus}_k{k}_bm25wt{bm25_wt}_medcptwt{medcpt_wt}_N{N}.json"
@@ -157,12 +161,19 @@ if __name__ == "__main__":
 			truth_sum = sum(qrels[qid].values())
 			
 			# get the keyword list
+			# if q_type in ["raw", "human_summary"]:
+			# 	conditions = [id2queries[qid][q_type]]
+			# elif "deepseek" in q_type:
+			# 	conditions = id2queries[qid][q_type]["conditions"]
+			# elif "Clinician" in q_type:
+			# 	conditions = id2queries[qid].get(q_type, [])
+			# 在 main 函数中修改条件判断部分
 			if q_type in ["raw", "human_summary"]:
-				conditions = [id2queries[qid][q_type]]
-			elif "turbo" in q_type:
-				conditions = id2queries[qid][q_type]["conditions"]
+				conditions = [id2queries[qid]["summary"]]  # 使用 summary 字段
+			elif "deepseek" in q_type:
+				conditions = id2queries[qid]["conditions"]  # 直接获取 conditions
 			elif "Clinician" in q_type:
-				conditions = id2queries[qid].get(q_type, [])
+				conditions = id2queries[qid].get("conditions", [])
 
 			if len(conditions) == 0:
 				nctid2score = {}
@@ -223,3 +234,22 @@ if __name__ == "__main__":
 	
 	with open(output_path, "w") as f:
 		json.dump(qid2nctids, f, indent=4)
+	
+	average_recall = sum(recalls) / len(recalls)
+	print(f"\nEvaluation Results:")
+	print(f"Average Recall@{N}: {average_recall:.4f}")
+	metrics_path = output_path.replace(".json", "_metrics.json")
+	metrics = {
+    	"average_recall": average_recall,
+    	"recall_per_query": recalls,
+    	"parameters": {
+        	"corpus": corpus,
+        	"query_type": q_type,
+        	"k": k,
+        	"bm25_weight": bm25_wt,
+       		"medcpt_weight": medcpt_wt,
+        	"N": N
+    	}
+	}
+	with open(metrics_path, "w") as f:
+		json.dump(metrics, f, indent=4)

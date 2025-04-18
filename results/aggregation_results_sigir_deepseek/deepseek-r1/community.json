@@ -1,0 +1,334 @@
+{
+    "sigir-20141": {
+        "NCT01724996": {
+            "relevance_explanation": "The patient presents with chest pain, which is the target condition of the trial. The trial aims to evaluate chest wall tenderness as a bedside test to exclude acute coronary syndrome, directly aligning with the patient's presentation. However, the trial's focus on demographic groups adds a layer of relevance that is partially addressed by the patient's demographic details (African-American woman).",
+            "relevance_score_R": 95.0,
+            "eligibility_explanation": "The patient meets all exclusion criteria requirements (provides consent, stable cardiopulmonary status, self-reported chest pain, no disqualifying medical history). While inclusion criteria are not explicitly listed, the patient\u2019s presentation (chest pain) and compliance with protocols strongly suggest alignment with the trial\u2019s goals. No exclusion factors apply, and the trial\u2019s core eligibility requirements appear satisfied.",
+            "eligibility_score_E": 95.0
+        },
+        "NCT00166231": {
+            "relevance_explanation": "The clinical trial focuses on pediatric patients (ages 8-18) with chest pain or other somatic symptoms. The patient is a 58-year-old adult with chest pain, making the trial's pediatric focus irrelevant to her demographic. However, the shared target condition (chest pain) creates minimal relevance.",
+            "relevance_score_R": 20.0,
+            "eligibility_explanation": "The patient fails all age-related inclusion criteria (0,1,2) but meets the English-speaking requirement (inclusion 3) and is not excluded by the language exclusion. However, the trial's pediatric age restriction is a hard eligibility barrier, rendering the patient ineligible despite partial alignment with non-age criteria.",
+            "eligibility_score_E": -20.0
+        },
+        "NCT00462241": {
+            "relevance_explanation": "The patient's primary complaint is acute chest pain, aligning with the trial's focus on musculoskeletal chest pain. The patient meets several inclusion criteria related to pain characteristics, consent, and absence of exclusionary conditions. However, the trial's requirements for Danish language proficiency and residency in Funen County are not met, which are administrative but critical for participation.",
+            "relevance_score_R": 85.0,
+            "eligibility_explanation": "The patient is ineligible due to failing inclusion criteria 4 (Danish language proficiency) and 5 (residency in Funen County), which are mandatory. While the patient meets most medical inclusion criteria and lacks exclusionary conditions, the administrative barriers result in ineligibility. Uncertainty about musculoskeletal origin of pain (exclusion criterion 0) further supports ineligibility.",
+            "eligibility_score_E": -85.0
+        },
+        "NCT00536224": {
+            "relevance_explanation": "The patient presents with chest pain, which is the target condition of the trial. They also have two modifiable cardiovascular risk factors (hypertension and obesity) that directly align with the inclusion criteria. This makes the patient highly relevant to the trial's focus on addressing cardiovascular risk behaviors.",
+            "relevance_score_R": 100.0,
+            "eligibility_explanation": "The patient meets the inclusion criterion (has two modifiable risk factors) and does not violate any exclusion criteria. All exclusion criteria (e.g., no myocardial ischemia rule-in, availability for follow-up, consent capacity) are explicitly satisfied or not applicable based on the documentation.",
+            "eligibility_score_E": 100.0
+        },
+        "NCT00623454": {
+            "relevance_explanation": "The patient has current chest pain, which is relevant to the trial's focus on chest pain. However, the trial specifically targets patients investigated 6 months prior at a specific clinic, which the patient does not meet. This mismatch in timing and location reduces relevance.",
+            "relevance_score_R": 25.0,
+            "eligibility_explanation": "The patient fails the critical inclusion criterion (investigation 6 months ago at the specified clinic), making them ineligible. While they meet inclusion 1 (current symptoms) and are not excluded by any exclusion criteria, the failure of inclusion 0 results in ineligibility.",
+            "eligibility_score_E": -25.0
+        },
+        "NCT02015858": {
+            "relevance_explanation": "The clinical trial focuses on pain evaluation during chest tube removal post-lung surgery. While the patient has chest pain, there is no indication she underwent lung surgery or has a chest tube (inclusion criterion 0 unmet). However, the trial's broader context of chest pain and the patient\u2019s ability to comply with pain reporting (inclusion criterion 1 met) create partial relevance.",
+            "relevance_score_R": 35.0,
+            "eligibility_explanation": "The patient is ineligible because they do not meet the primary inclusion criterion (undergoing chest tube removal). While they satisfy inclusion criterion 1 (able to indicate pain scores) and are not excluded by any exclusion criteria, failure to meet inclusion criterion 0 results in automatic ineligibility.",
+            "eligibility_score_E": -35.0
+        },
+        "NCT01284179": {
+            "relevance_explanation": "The patient presents with chest pain, which is the target condition of the trial (functional chest pain). However, the patient's symptoms are acute (2 days duration) and do not meet the Rome III criteria for functional chest pain (requiring 3 months of symptoms with 6-month onset). The burning quality of pain also conflicts with inclusion criteria. While some inclusion criteria (age, consent) are met, the core diagnostic criteria for refractory functional chest pain are not satisfied, reducing overall relevance.",
+            "relevance_score_R": 40.0,
+            "eligibility_explanation": "The patient fails key inclusion criteria: symptom duration/onset (criterion 1), burning pain quality (criterion 2), and lack of antidepressant trial (criterion 5). While some inclusion criteria lack information (e.g., GERD evaluation), these failures alone make the patient ineligible. Exclusion criteria do not apply (no severe comorbidities, prior hypnosis, etc.). The eligibility score reflects clear ineligibility due to failed critical inclusion criteria.",
+            "eligibility_score_E": -40.0
+        },
+        "NCT01494870": {
+            "relevance_explanation": "The patient presents with symptoms suggestive of Acute Coronary Syndrome (chest pain with ischemic features), aligning with the trial's target condition. However, the trial specifically focuses on patients with left bundle branch block (LBBB), which is not documented in the patient's ECG (nonspecific changes only). This mismatch reduces relevance, though the clinical context (ACS evaluation) maintains partial alignment.",
+            "relevance_score_R": 60.0,
+            "eligibility_explanation": "The patient meets the age requirement (inclusion 0) but lacks documented LBBB (critical inclusion 2), which is a trial-defining requirement. Inclusion 1 (pain duration \u226520 minutes) and inclusion 3 (urgent angiography timing) lack sufficient evidence. No exclusion criteria apply. The absence of LBBB makes full eligibility impossible, but partial inclusion criteria compliance prevents E from reaching -R.",
+            "eligibility_score_E": -30.0
+        },
+        "NCT01290770": {
+            "relevance_explanation": "The patient is highly relevant to the trial as she has obesity (BMI>30) and chest pain resembling stable angina, which aligns with the study's focus on obese patients with atherosclerotic symptoms. The trial aims to correlate Lp(a) and TFPI activity in this population, and her presentation matches the target condition (atherosclerosis).",
+            "relevance_score_R": 85.0,
+            "eligibility_explanation": "The patient meets 3/4 inclusion criteria (obesity, no aspirin use, chest pain like stable angina) but fails the coronary exploration requirement. However, she is categorically excluded by exclusion criterion 0 (female sex). This absolute exclusion outweighs partial inclusion fulfillment, rendering her ineligible.",
+            "eligibility_score_E": -85.0
+        },
+        "NCT00337116": {
+            "relevance_explanation": "The patient presents with symptoms suggestive of acute coronary syndrome (chest pain with radiation, diaphoresis, dyspnea) which aligns with the trial's target conditions (Unstable Angina, Myocardial Infarction). However, there is no definitive ACS diagnosis (EKG shows nonspecific changes) and no mention of ICCU admission. The trial's focus on anginal episode management during hospitalization creates partial relevance as the patient's hospitalization status is unclear.",
+            "relevance_score_R": 70.0,
+            "eligibility_explanation": "The patient meets 2/5 inclusion criteria (age >18 and consent capability) but fails key requirements: no confirmed ACS diagnosis (Inclusion 1) and no ischemic symptoms during hospitalization (Inclusion 2). Exclusion criteria are mostly not met except for possible unknown Cr levels (Exclusion 7). While several exclusions are avoided, critical inclusion failures outweigh the positive factors.",
+            "eligibility_score_E": 30.0
+        },
+        "NCT00000501": {
+            "relevance_explanation": "The patient has hypertension and obesity, which are target conditions of the trial. However, the trial focuses on primary prevention in individuals aged 25-49 without existing hypertension, while the patient is 58 and already has hypertension, reducing relevance.",
+            "relevance_score_R": 40.0,
+            "eligibility_explanation": "The patient is ineligible due to age (58 vs. required 25-49) and existing hypertension (a major disease excluded by inclusion criteria). While obesity and lack of medications align with some criteria, critical exclusions dominate.",
+            "eligibility_score_E": -40.0
+        },
+        "NCT01904695": {
+            "relevance_explanation": "The patient has hypertension (sentence 3) and falls within the age range (58 years), which partially aligns with the trial's focus on hypertension. However, the trial specifically targets resistant hypertension (blood pressure >140/90 despite \u22653 medications), and the patient is not on any medications (sentence 5), making her hypertension non-resistant. The absence of a Phlegm and Stasis Syndrome diagnosis further reduces relevance.",
+            "relevance_score_R": 50.0,
+            "eligibility_explanation": "The patient fails the inclusion criterion due to lack of medication use and Phlegm and Stasis Syndrome diagnosis. While exclusion criteria do not apply (no evidence of secondary hypertension or comorbidities like diabetes), the failure to meet inclusion requirements results in ineligibility.",
+            "eligibility_score_E": -50.0
+        },
+        "NCT00202566": {
+            "relevance_explanation": "The patient presents with symptoms suggestive of angina (chest pain during walking, radiation to back, associated symptoms) which aligns with the trial's focus on stable angina pectoris. However, key mismatches exist: acute onset rather than chronic angina, no documented coronary artery disease, no prior beta-blocker use, and no exercise tolerance test results. These factors reduce but don't eliminate relevance.",
+            "relevance_score_R": 40.0,
+            "eligibility_explanation": "The patient fails all inclusion criteria (acute vs chronic angina, no CAD documentation, no beta-blocker history, no exercise test) but doesn't meet exclusion criteria. While angina symptoms create some alignment, the complete lack of inclusion criteria fulfillment makes ineligibility clear.",
+            "eligibility_score_E": -40.0
+        },
+        "NCT01334203": {
+            "relevance_explanation": "The patient presents with chest pain suggestive of angina, which aligns with the trial's focus on chronic stable angina. However, the trial requires documented coronary artery disease (CAD) and type 2 diabetes mellitus (T2DM), both of which are absent in the patient. The patient's chest pain is new-onset (2 days), conflicting with the inclusion criterion requiring a \u22653-month history of chronic stable angina. While age and consent are met, the absence of CAD, T2DM, and chronic angina history reduces overall relevance.",
+            "relevance_score_R": 50.0,
+            "eligibility_explanation": "The patient is ineligible due to failing key inclusion criteria: no documented CAD (criteria 4-8), no T2DM (criterion 13), and insufficient angina history (criterion 3). Exclusion criteria do not apply (e.g., obesity is not confirmed as morbid, no exercise contraindications). However, eligibility is partially offset by meeting age and consent requirements. The negative score reflects exclusion by critical inclusion criteria.",
+            "eligibility_score_E": -30.0
+        },
+        "NCT02232607": {
+            "relevance_explanation": "The patient presents with chest pain suggestive of angina, which is the target condition of the trial. However, the trial specifically requires chronic stable angina (\u22653 months duration), while the patient's symptoms are new (2 days old). The patient meets some inclusion criteria (age, no antianginal medications) but fails critical ones (angina history, exercise test data). Relevance is moderate due to overlapping angina-related context but mismatch in chronicity and diagnostic requirements.",
+            "relevance_score_R": 60.0,
+            "eligibility_explanation": "The patient fails key inclusion criteria: (1) lacks \u22653 months of stable angina history, (2) no documented coronary artery disease, and (3) no treadmill exercise test results. They meet inclusion criteria for age and medication status. Exclusion criteria are mostly not triggered (e.g., no recent MI, normal physical exam). However, the failure to satisfy core inclusion criteria outweighs other factors, resulting in ineligibility.",
+            "eligibility_score_E": -40.0
+        },
+        "NCT01056367": {
+            "relevance_explanation": "The patient has hypertension, which is a target condition of the trial. However, the trial specifically focuses on patients with type-II diabetes mellitus (NIDDM), which the patient explicitly denies having. This mismatch in diabetes status significantly reduces relevance, though hypertension maintains partial relevance.",
+            "relevance_score_R": 50.0,
+            "eligibility_explanation": "While the patient meets age requirements, hypertension status, and compliance criteria, the absence of type-II diabetes mellitus (a mandatory inclusion criterion) makes them fully ineligible. No exclusion criteria apply, but the missing critical inclusion criterion dominates eligibility determination.",
+            "eligibility_score_E": -50.0
+        },
+        "NCT01484912": {
+            "relevance_explanation": "The patient presents with chest pain, which is relevant to the trial on chronic stable angina. However, the patient's chest pain is described as first-time and episodic, not clearly meeting the chronic stable angina criteria. The trial requires documented coronary artery disease or positive exercise tolerance tests (ETT), which are not mentioned in the patient's note. Some inclusion criteria (age, post-menopausal status, consent) are met, but core angina-related criteria are unaddressed.",
+            "relevance_score_R": 60.0,
+            "eligibility_explanation": "The patient meets age, post-menopausal, and consent inclusion criteria but lacks evidence of chronic stable angina (criterion 1) and required ETT results (criteria 2-3). Exclusion criteria do not apply. While partially eligible for non-core criteria, the absence of key angina/ETT requirements limits eligibility.",
+            "eligibility_score_E": 30.0
+        },
+        "NCT01293019": {
+            "relevance_explanation": "The patient presents with chest pain, which is a target condition of the trial. However, the trial primarily focuses on cystic fibrosis patients, and the patient has no documented diagnosis of cystic fibrosis. This mismatch significantly reduces relevance. The presence of chest pain provides partial relevance, but the absence of CF limits alignment with the trial's core focus.",
+            "relevance_score_R": 30.0,
+            "eligibility_explanation": "The patient fails the critical inclusion criterion for cystic fibrosis (criterion 0), which is a prerequisite for the trial. While they meet age (criterion 1) and consent (criterion 3) requirements, they lack chronic pain (criterion 2) and insurance documentation (criterion 4). No exclusion criteria apply, but the absence of CF and chronic pain makes them fundamentally ineligible.",
+            "eligibility_score_E": -30.0
+        },
+        "NCT00925119": {
+            "relevance_explanation": "The clinical trial focuses on Type 2 diabetes and genetic responses to beta-blockers. The patient explicitly denies having diabetes (sentence 4), which is the core inclusion criterion. While the patient has hypertension and obesity (risk factors for diabetes), the absence of diabetes itself makes the trial's primary focus inapplicable. Exclusion criteria are all marked as not applicable due to the lack of diabetes, further reducing relevance.",
+            "relevance_score_R": 10.0,
+            "eligibility_explanation": "The patient fails the mandatory inclusion criterion (Type 2 diabetes) and has no evidence of pre-diabetes. All exclusion criteria are irrelevant due to the absence of diabetes. Since eligibility hinges entirely on diabetes status, and the patient does not meet this requirement, eligibility is maximally negative relative to the limited relevance.",
+            "eligibility_score_E": -10.0
+        },
+        "NCT00951808": {
+            "relevance_explanation": "The patient presents with chest pain symptoms that are superficially related to acute chest syndrome (ACS), which is the focus of the trial. However, the trial specifically targets sickle cell disease (SCD) patients, and the patient has no documented SCD diagnosis (SS, SC, or S-\u03b2 thalassemia). The absence of SCD drastically reduces relevance, as all inclusion/exclusion criteria depend on this diagnosis.",
+            "relevance_score_R": 10.0,
+            "eligibility_explanation": "The patient is ineligible because they do not meet the foundational requirement of having sickle cell disease (SCD). All inclusion criteria (e.g., hemoglobin variants, sPLA2 levels, fever patterns) and exclusion criteria (e.g., transfusion history) are contingent on SCD, which the patient lacks. No criteria apply positively or negatively to this patient.",
+            "eligibility_score_E": -10.0
+        },
+        "NCT00348803": {
+            "relevance_explanation": "The clinical trial focuses on Chronic Thromboembolic Pulmonary Hypertension (CTEPH), a condition not mentioned in the patient's note. While the patient has hypertension and obesity, these are non-specific to CTEPH. The trial's emphasis on genetic and hemodynamic profiling in CTEPH patients does not align with the patient's presentation of acute chest pain and lack of documented CTEPH diagnosis. However, hypertension as a secondary condition introduces minimal relevance.",
+            "relevance_score_R": 20.0,
+            "eligibility_explanation": "The patient does not meet the inclusion criterion (no CTEPH diagnosis) but does not violate the exclusion criterion (provides consent). Since eligibility hinges on inclusion criteria, the lack of CTEPH diagnosis renders the patient ineligible. The absence of exclusion does not offset this, resulting in a negative eligibility score proportional to the limited relevance.",
+            "eligibility_score_E": -20.0
+        },
+        "NCT00896285": {
+            "relevance_explanation": "The clinical trial focuses on malignant pleural effusion requiring pleurodesis. The patient presents with chest pain but has no documented diagnosis of malignant pleural effusion, pleural malignancy, or pleural effusion in the context of cancer. The trial's core inclusion criteria (0-3) are unmet. However, the patient meets one inclusion (consent) and none of the exclusions, creating minor relevance due to procedural alignment (consent) but no clinical alignment with the trial's primary focus.",
+            "relevance_score_R": 25.0,
+            "eligibility_explanation": "The patient fails all primary inclusion criteria (0-3) related to malignant pleural effusion or cancer, which are mandatory for trial eligibility. While they meet inclusion criterion 5 (consent) and are not excluded by any exclusion criteria, the absence of the core qualifying diagnosis renders them ineligible. Eligibility is negative due to unmet critical inclusions, offset slightly by meeting non-core criteria.",
+            "eligibility_score_E": -15.0
+        },
+        "NCT00932867": {
+            "relevance_explanation": "The patient has hypertension (target condition) and is over 18, making them partially relevant. However, critical inclusion criteria (ACEi intolerance documentation and BP thresholds) are unconfirmed, reducing full relevance.",
+            "relevance_score_R": 60.0,
+            "eligibility_explanation": "Patient meets age criteria but fails BP documentation (inclusion 1/4) and ACEi intolerance requirement (inclusion 2/5). No exclusion criteria apply. Partial inclusion compliance but critical failures outweigh successes.",
+            "eligibility_score_E": -40.0
+        },
+        "NCT01028534": {
+            "relevance_explanation": "The patient has hypertension, which is one of the target conditions of the trial. However, there is no mention of obstructive sleep apnea (OSA) in the patient's history, which is a critical inclusion criterion for this trial. The trial specifically targets patients with both hypertension and OSA, so the absence of OSA documentation significantly reduces relevance.",
+            "relevance_score_R": 30.0,
+            "eligibility_explanation": "The patient does not meet the OSA-related inclusion criteria (no AHI/CPAP documentation) and lacks blood pressure measurements to confirm uncontrolled hypertension. While they are not excluded by any exclusion criteria (no recent cardiac events, normal physical exam), failure to meet inclusion criteria outweighs these factors. The eligibility score reflects this ineligibility relative to the limited relevance.",
+            "eligibility_score_E": -30.0
+        },
+        "NCT00185120": {
+            "relevance_explanation": "The patient is a 58-year-old with hypertension, directly aligning with the trial's focus on treating high blood pressure. Both inclusion criteria (age >18 and hypertension) are explicitly met, and no exclusion criteria apply. The trial's target condition and the patient's diagnosis are a direct match.",
+            "relevance_score_R": 100.0,
+            "eligibility_explanation": "The patient meets all inclusion criteria (age, hypertension) and none of the exclusion criteria (no history of stroke/TIA, recent cardiac events, or diabetes). All eligibility predictions confirm inclusion and absence of exclusionary factors.",
+            "eligibility_score_E": 100.0
+        },
+        "NCT02078921": {
+            "relevance_explanation": "The patient presents with chest pain symptoms that could be related to angina, but the trial specifically targets chronic stable angina (\u22652 months duration), which the patient does not have as her symptoms are first-time and only two days old. This mismatch in the primary condition significantly reduces relevance.",
+            "relevance_score_R": 30.0,
+            "eligibility_explanation": "The patient does not meet any inclusion criteria (specifically lacking chronic stable angina and required diagnostic tests) but is not excluded by any exclusion criteria. Thus, the patient is ineligible due to failure to meet inclusion requirements.",
+            "eligibility_score_E": -30.0
+        },
+        "NCT01087723": {
+            "relevance_explanation": "The patient has symptoms of chest pain and is evaluated for ACS, aligning with the trial's focus on STE-ACS. However, critical mismatches exist: symptom onset >12 hours (vs. trial's <12-hour window) and lack of required ECG findings (ST elevation or specific patterns). Partial relevance arises from age \u226518 and consent compliance.",
+            "relevance_score_R": 60.0,
+            "eligibility_explanation": "The patient fails key inclusion criteria: symptom duration (criterion 4) and ECG criteria (5-7). While they meet age (3) and consent (2) criteria, eligibility is primarily determined by the trial's clinical requirements (STE-ACS within 12 hours with specific ECG changes), which are unmet. Exclusion due to critical mismatches outweighs partial inclusions.",
+            "eligibility_score_E": -50.0
+        },
+        "NCT01506999": {
+            "relevance_explanation": "The patient presents with symptoms (chest pain, nausea, diaphoresis) that align with the trial's focus on ischemic heart diseases, specifically angina or acute coronary syndrome. However, she does not meet the specific age at onset criteria for inclusion (58 years old, not <50 or >60) and presented outside the required 6-hour window for acute coronary syndrome. Her conditions are related but do not fully align with the trial's inclusion criteria.",
+            "relevance_score_R": 60.0,
+            "eligibility_explanation": "The patient fails both inclusion criteria (age at onset and symptom timing) but meets none of the exclusion criteria. Since she is not included by any inclusion criteria, her eligibility score reflects full ineligibility relative to the relevance score.",
+            "eligibility_score_E": -60.0
+        },
+        "NCT00644319": {
+            "relevance_explanation": "The clinical trial focuses on patients with malignant pleural effusion requiring pleurodesis, which is a cancer-related condition. The patient presents with chest pain but has no documented cancer diagnosis, pleural effusion, or thoracoscopy procedure. While some non-disease inclusion criteria (e.g., consent ability, no NSAID sensitivity) are met, the absence of metastatic cancer or pleural pathology makes the overall relevance low.",
+            "relevance_score_R": 15.0,
+            "eligibility_explanation": "The patient fails to meet all disease-specific inclusion criteria (malignant pleural effusion, histologically proven cancer, thoracoscopy findings). However, they satisfy some general criteria: no GI bleeding, no NSAID/opiate sensitivity, consent capability, and no concurrent analgesics. Since eligibility fundamentally requires a cancer diagnosis (which is absent), the negative eligibility score reflects critical exclusion despite partial alignment with non-disease criteria.",
+            "eligibility_score_E": -15.0
+        },
+        "NCT02072694": {
+            "relevance_explanation": "The patient has obesity, which is the primary target condition of the trial. However, key mismatches exist: the patient's age (58 vs. required 18-40), unconfirmed BMI range (30-40 not verified), and lack of information about residing in Ribeir\u00e3o Preto (a strict geographic requirement). These factors reduce relevance despite the obesity alignment.",
+            "relevance_score_R": 30.0,
+            "eligibility_explanation": "The patient is definitively excluded due to hypertension (exclusion criterion 0) and age mismatch (inclusion criterion 1). While they meet gender requirements (inclusion criterion 2) and medication criteria (exclusion criterion 3), exclusion by hypertension alone makes them ineligible. Geographic mismatch (inclusion criterion 0) and BMI uncertainty further prevent eligibility.",
+            "eligibility_score_E": -30.0
+        },
+        "NCT00356707": {
+            "relevance_explanation": "The patient is an African American woman with obesity, which directly aligns with the trial's focus on obesity in this demographic. However, the trial specifically examines neighborhood environmental influences, and the patient note lacks information about her residence location (e.g., New York, Los Angeles, or Chicago) or participation in the BWHS study, which are key inclusion criteria. This partial alignment reduces the overall relevance.",
+            "relevance_score_R": 60.0,
+            "eligibility_explanation": "The patient does not meet inclusion criterion 0 (not enrolled in BWHS study) and lacks information to confirm inclusion criterion 1 (residence in required cities). While she matches the target population (African American women with obesity), the absence of required study participation and uncertain residency status makes her ineligible. However, her demographic/condition alignment prevents a full negative score.",
+            "eligibility_score_E": -40.0
+        },
+        "NCT01770080": {
+            "relevance_explanation": "The patient presents with chest pain, which is unrelated to the trial's focus on episodic tension-type headache (ETTH). However, she meets age requirements (58 years), willingness to comply, and informed consent criteria.",
+            "relevance_score_R": 30.0,
+            "eligibility_explanation": "The patient meets age, consent, and compliance inclusion criteria and is not excluded by any exclusion criteria. However, the absence of ETTH diagnosis and related symptoms makes her ineligible despite meeting administrative criteria.",
+            "eligibility_score_E": 30.0
+        },
+        "NCT02507050": {
+            "relevance_explanation": "The patient presents with symptoms consistent with angina (episodic pressing/burning chest pain), which aligns with the trial's target conditions (angina and coronary artery disease). However, the trial requires angiographic evidence of coronary artery stenosis and PCI referral, which are not documented in the patient's note. The absence of critical inclusion criteria (e.g., angiographic evidence, FFR values) reduces the overall relevance.",
+            "relevance_score_R": 60.0,
+            "eligibility_explanation": "The patient meets two inclusion criteria: angina symptoms and willingness to provide consent. However, they lack angiographic evidence, FFR data, and existing beta-blocker use, which are essential for eligibility. Exclusion criteria are mostly not met or lack sufficient information, but the absence of critical inclusions outweighs these factors. The patient is partially aligned but fails key requirements.",
+            "eligibility_score_E": 20.0
+        },
+        "NCT01171911": {
+            "relevance_explanation": "The patient presents with symptoms suggestive of unstable angina (chest pain, nausea, diaphoresis), which aligns with the trial's target condition of Acute Coronary Syndrome. However, the diagnosis is not explicitly confirmed, and key inclusion criteria (e.g., coronary artery stenosis severity, blood pressure) lack documentation. The trial's focus on endothelial shear stress in coronary arteries requires specific anatomical and hemodynamic data, which are missing. Relevance is moderate due to clinical suspicion of ACS but incomplete diagnostic confirmation and missing data.",
+            "relevance_score_R": 65.0,
+            "eligibility_explanation": "The patient meets inclusion criteria 1 (age 18-75) and 4 (normal exam implies HR 60-100). However, inclusion criterion 0 (diagnosis of unstable angina/non-Q wave MI) is not met, and criteria 2 (stenosis severity) and 3 (blood pressure) lack data. Exclusion criteria are not triggered (no ST-elevation MI, hypotension, arrhythmias, allergies, etc.), but exclusion criteria 6 (creatinine) and 8 (LVEF) lack information. Eligibility is limited by unmet critical inclusion criteria and missing data.",
+            "eligibility_score_E": 30.0
+        },
+        "NCT02105220": {
+            "relevance_explanation": "The patient has obesity and hypertension, which are target conditions of the trial. However, the trial focuses on mechanically ventilated patients in respiratory failure, a context not applicable to this patient presenting with chest pain. Relevance is moderate due to overlapping conditions but critical mismatch in clinical context.",
+            "relevance_score_R": 45.0,
+            "eligibility_explanation": "The patient meets the age requirement (inclusion 0) but fails two critical inclusion criteria: no evidence of requiring intubation (inclusion 1) and no confirmed BMI\u226540/IAP\u226512 (inclusion 2). No exclusion criteria apply. Eligibility is strongly negative due to failure to meet essential trial requirements.",
+            "eligibility_score_E": -30.0
+        },
+        "NCT00418392": {
+            "relevance_explanation": "The patient presents with chest pain and dyspnea, which are symptoms that could be associated with pneumothorax. However, the patient note does not mention a diagnosis of pneumothorax, which is the trial's target condition. The trial's inclusion criteria (e.g., first episode of pneumothorax, age 15-40) are largely irrelevant to the patient's documented conditions (hypertension, obesity, nonspecific chest pain). Only minor overlaps exist (e.g., consent compliance).",
+            "relevance_score_R": 20.0,
+            "eligibility_explanation": "The patient fails critical inclusion criteria: age (58 vs. 15-40) and lack of pneumothorax diagnosis. While they meet gender and consent criteria, these are insufficient for eligibility. Exclusion criteria do not apply, but the absence of key inclusion requirements makes the patient ineligible. The lack of pneumothorax-related clinical context (e.g., aspiration procedure, CXR findings) further reduces eligibility.",
+            "eligibility_score_E": -15.0
+        },
+        "NCT00424021": {
+            "relevance_explanation": "The patient presents with chest pain and has hypertension/obesity, but the clinical trial targets Pulmonary Arterial Hypertension (PAH). The patient has no documented PAH diagnosis or prior participation in the prerequisite study (NCT00046319), which is critical for inclusion. While some demographic factors (age, gender) align with general trial logistics, the core disease mismatch and lack of prior study enrollment significantly reduce relevance.",
+            "relevance_score_R": 20.0,
+            "eligibility_explanation": "The patient fails all inclusion criteria due to lack of PAH diagnosis and prior participation in NCT00046319 (critical prerequisites). Exclusion criteria do not apply (no medication conflicts or contraindications). However, the absolute failure to meet inclusion requirements outweighs neutral exclusion factors, resulting in ineligibility.",
+            "eligibility_score_E": -20.0
+        },
+        "NCT02226510": {
+            "relevance_explanation": "The patient has obesity, a factor associated with LVH in normotensive patients, and presents with chest pain suggestive of possible cardiac issues. However, the trial targets normotensive patients with documented CAD and LVH, while this patient has hypertension and lacks documented CAD or LVH. Her insulin resistance status is unknown. Partial relevance exists due to obesity and cardiac symptoms, but key trial criteria (CAD, LVH, normotension) are missing.",
+            "relevance_score_R": 45.0,
+            "eligibility_explanation": "The patient meets age, consent, and compliance criteria but fails critical inclusion criteria: no documented CAD (I2), no LVH diagnosis (I3), no insulin resistance/HbA1c data (I4), and hypertension (I5). Exclusion criteria do not apply. While 3/7 inclusion criteria are met, the absence of CAD and LVH (core trial targets) makes her ineligible despite partial alignment.",
+            "eligibility_score_E": -35.0
+        },
+        "NCT00375089": {
+            "relevance_explanation": "The patient has obesity, which is a target condition of the trial. However, the trial specifically focuses on Prader-Willi Syndrome (PWS) and Early-onset Morbid Obesity (EMO) with strict age and diagnostic criteria. The patient is 58 years old (exceeding EMO's age limit) and has no documented PWS diagnosis or genetic testing. While obesity creates partial relevance, the lack of alignment with PWS/EMO-specific criteria reduces overall relevance.",
+            "relevance_score_R": 30.0,
+            "eligibility_explanation": "The patient fails both inclusion criteria: (1) No PWS diagnosis or genetic testing, (2) Age 58 exceeds EMO's <30 requirement. The exclusion criterion is inapplicable as there is no evidence of cognitive impairment or alternative genetic causes. The patient is ineligible due to unmet inclusion criteria but not explicitly excluded.",
+            "eligibility_score_E": -30.0
+        },
+        "NCT00745043": {
+            "relevance_explanation": "The clinical trial targets COPD patients, but the patient does not have a documented COPD diagnosis. However, the patient meets the age inclusion criterion and has hypertension (a condition where beta-blockers are used), creating partial relevance. The lack of COPD significantly reduces overall relevance.",
+            "relevance_score_R": 30.0,
+            "eligibility_explanation": "The patient fails the primary inclusion criterion (COPD diagnosis) and smoking history requirement, making them ineligible despite meeting the age criterion. No exclusion criteria apply, but eligibility is fundamentally blocked by missing COPD status.",
+            "eligibility_score_E": -30.0
+        },
+        "NCT02626741": {
+            "relevance_explanation": "The patient is relevant to the trial due to obesity (a core target condition), but lacks confirmed metabolic syndrome (requires \u22653 criteria; only hypertension and obesity documented). The trial focuses on meal replacement for obesity with metabolic syndrome, creating partial alignment.",
+            "relevance_score_R": 50.0,
+            "eligibility_explanation": "The patient meets BMI \u226525 (inclusion 0) but fails metabolic syndrome criteria (inclusion 1) and medication requirements (inclusion 2). No exclusion criteria definitively apply. Partial eligibility exists due to obesity but key trial requirements are unmet.",
+            "eligibility_score_E": 16.7
+        },
+        "NCT02159625": {
+            "relevance_explanation": "The patient has some overlapping characteristics with the trial (age \u226518, consent capability, obesity/BMI) and hypertension mentioned in the trial's risk factors. However, the trial specifically targets hemodialysis patients with ESRD and intradialytic hypotension (IDH), which are absent in the patient's history. The lack of ESRD/dialysis makes the patient fundamentally mismatched with the trial's core focus.",
+            "relevance_score_R": 25.0,
+            "eligibility_explanation": "The patient meets basic inclusion criteria (age, consent, BMI) but critically fails inclusion criteria 3 (ESRD/hemodialysis), 4-6 (dialysis-related requirements), which are mandatory for trial participation. No exclusion criteria definitively apply. The absence of ESRD/dialysis makes the patient categorically ineligible despite partial alignment with other criteria.",
+            "eligibility_score_E": -25.0
+        },
+        "NCT00001853": {
+            "relevance_explanation": "The patient is an African American woman with hypertension and obesity, which are target conditions of the trial. She presented with chest pain suggestive of cardiovascular involvement, aligning with the trial's focus on heart disease risk factors. The trial explicitly seeks non-diabetic African Americans, and the patient denies diabetes. Her demographic and clinical profile directly matches the study's objectives and inclusion criteria.",
+            "relevance_score_R": 90.0,
+            "eligibility_explanation": "The patient meets all inclusion criteria (African American, non-diabetic, obesity) and is not excluded by any exclusion criteria (no diabetes, no relevant medications, postmenopausal age, no pregnancy/breastfeeding). All eligibility predictions confirm inclusion and lack of exclusion. The trial's focus on obesity and cardiovascular risk factors in non-diabetic African Americans aligns perfectly with her profile.",
+            "eligibility_score_E": 90.0
+        },
+        "NCT00883987": {
+            "relevance_explanation": "The clinical trial targets Low Back Pain, but the patient presents with chest pain, which is unrelated. Although some inclusion criteria (walking ability, hearing, vision, English comprehension) are met, the primary condition mismatch and age exclusion significantly reduce relevance.",
+            "relevance_score_R": 20.0,
+            "eligibility_explanation": "The patient is excluded by exclusion criterion 4 (chest pain on exertion) and fails inclusion criterion 0 (age limit). While some inclusion criteria are satisfied, critical exclusions and age mismatch outweigh eligibility.",
+            "eligibility_score_E": -20.0
+        },
+        "NCT01879293": {
+            "relevance_explanation": "The patient presents with chest pain and cardiovascular risk factors (hypertension, obesity), which are tangentially related to ischemic heart disease (IHD) and left ventricular hypertrophy (LVH), the trial's focus. However, there is no confirmed diagnosis of IHD, coronary artery disease (CAD), myocardial infarction (MI), or LVH in the patient's record. The trial specifically targets patients with documented IHD and LVH, which are absent here. Relevance is moderate due to overlapping cardiovascular concerns but limited by the lack of key diagnostic confirmations.",
+            "relevance_score_R": 35.0,
+            "eligibility_explanation": "The patient fails all inclusion criteria: no confirmed normal glucose tolerance, no documented CAD/MI, uncontrolled blood pressure (hypertension), and no evidence of LVH. However, they do not meet any exclusion criteria (not on metformin, no comorbidities, able to consent). Since eligibility requires meeting inclusion criteria and avoiding exclusion criteria, the patient's failure to satisfy any inclusion criteria results in ineligibility. The score reflects this absence of inclusion despite no exclusions.",
+            "eligibility_score_E": -35.0
+        },
+        "NCT00077948": {
+            "relevance_explanation": "The clinical trial targets patients with advanced chronic heart failure (CHF), specifically those struggling to tolerate beta-blockers. The patient presents with chest pain but lacks any documented CHF diagnosis, NYHA class, or LVEF measurements required by inclusion criteria. While she meets basic requirements (age, consent), the absence of CHF significantly reduces relevance.",
+            "relevance_score_R": 20.0,
+            "eligibility_explanation": "The patient fails key inclusion criteria (CHF diagnosis, LVEF \u226435%, beta-blocker intolerance) critical for trial eligibility. While she meets age and consent criteria and is not excluded by exclusion criteria, the lack of CHF disqualifies her. Thus, ineligibility dominates despite partial inclusion alignment.",
+            "eligibility_score_E": -20.0
+        },
+        "NCT00974116": {
+            "relevance_explanation": "The clinical trial targets childhood obesity in children aged 7-13. The patient is a 58-year-old adult with obesity, making her age and the pediatric focus of the trial fundamentally mismatched. While obesity is a shared condition, the trial's eligibility framework (age, pediatric BMI criteria, exclusion of chronic illnesses) does not apply to adults.",
+            "relevance_score_R": 25.0,
+            "eligibility_explanation": "The patient is excluded by both exclusion criteria (age >13 and chronic illness) and fails inclusion criteria (age mismatch, chronic illness). However, the trial\u2019s relevance to the patient is already low due to the pediatric focus, so eligibility penalties are constrained by the low relevance score.",
+            "eligibility_score_E": -25.0
+        },
+        "NCT00454662": {
+            "relevance_explanation": "The patient has hypertension, which is a target condition of the trial. However, she is 58 years old (below the 65-85 age range) and lacks other qualifying risk factors like diabetes or documented cardiovascular disease. The trial's focus on combination antihypertensive therapy is less relevant as she currently takes no medications.",
+            "relevance_score_R": 30.0,
+            "eligibility_explanation": "The patient fails key inclusion criteria: age (58 < 65), no antihypertensive medication use, and no qualifying medical history/risk factors. While she has hypertension, BP values aren't documented to meet thresholds. No exclusion criteria definitively apply. Insufficient data exists for some criteria but doesn't overcome clear ineligibility.",
+            "eligibility_score_E": -30.0
+        },
+        "NCT00134160": {
+            "relevance_explanation": "The patient has hypertension, which is a target condition of the trial. However, she is 58 years old (below the 65+ age requirement), is African-American (trial specifies Japanese population), and is not on any antihypertensive medications (contradicting inclusion criteria requiring current monotherapy). The trial's focus on optimizing therapy in elderly patients with specific risk factors makes this case partially relevant but with significant mismatches.",
+            "relevance_score_R": 30.0,
+            "eligibility_explanation": "The patient fails all inclusion criteria: age (58 < 65), no current antihypertensive treatment, no documented BP measurements meeting thresholds, and no qualifying risk factors. Exclusion criteria do not apply as there's no evidence of secondary hypertension, heart failure, or other listed contraindications. However, the complete failure to meet inclusion requirements outweighs the lack of exclusions.",
+            "eligibility_score_E": -30.0
+        },
+        "NCT00252421": {
+            "relevance_explanation": "The patient is a 58-year-old woman, meeting the age and gender criteria for a trial targeting osteoporosis prevention in women. However, the patient's presentation focuses on chest pain (potentially angina-related), while the trial's primary focus is osteoporosis. The relevance is moderate due to demographic alignment but lacks direct mention of osteoporosis or related diagnostic data (e.g., BMD T-scores).",
+            "relevance_score_R": 50.0,
+            "eligibility_explanation": "The patient meets inclusion criterion 0 (age \u226550) but lacks data for inclusion criteria 1 (BMD T-score) and 2 (postmenopausal status). Crucially, exclusion criterion 7 (abnormal ECG) applies, which directly excludes the patient. While other exclusion criteria do not apply, the ECG abnormality alone renders the patient ineligible.",
+            "eligibility_score_E": -50.0
+        },
+        "NCT01660594": {
+            "relevance_explanation": "The patient presents with chest pain, which is relevant to the trial's focus on stable angina assessment. However, the trial specifically targets non-acute (stable) chest pain patients assessed in outpatient settings, while this patient presented acutely to the ER with recent-onset symptoms. Additionally, the trial requires prior CT calcium scoring which the patient hasn't undergone. Partial relevance exists due to shared themes of chest pain evaluation and documented risk factors.",
+            "relevance_score_R": 40.0,
+            "eligibility_explanation": "The patient fails two key inclusion criteria: 1) non-acute presentation (ER visit with recent symptoms suggests acute context), and 2) lack of prior CT calcium scoring. While they meet inclusion criterion 2 (documented risk factors) and don't meet exclusion criteria, eligibility requires satisfying all inclusion criteria. The critical failures outweigh partial alignment with one inclusion criterion.",
+            "eligibility_score_E": -30.0
+        },
+        "NCT02608255": {
+            "relevance_explanation": "The patient presents with chest pain and symptoms compatible with ACS, which aligns with the trial's focus. However, the symptom onset time (two days prior) exceeds the 3-hour window specified in inclusion criterion 0, though the latest episode ended 30 minutes before arrival. The patient meets other inclusion criteria (gender, no heparin use, consent) and has no exclusion factors. Relevance is high due to ACS symptoms but reduced due to the time discrepancy.",
+            "relevance_score_R": 70.0,
+            "eligibility_explanation": "The patient fails the critical inclusion criterion 0 (symptom onset time), making her ineligible despite meeting other inclusion criteria and no exclusions. The failure of this key criterion outweighs compliance with other requirements.",
+            "eligibility_score_E": -70.0
+        },
+        "NCT00162344": {
+            "relevance_explanation": "The clinical trial targets patients with diabetes and risk factors for coronary disease. The patient does not have diabetes (explicitly denied), which is a core requirement. However, she has some overlapping elements (hypertension, obesity, chest pain) that create partial relevance to the trial\u2019s secondary focus on risk factors and cardiac symptoms.",
+            "relevance_score_R": 25.0,
+            "eligibility_explanation": "The patient is ineligible because they do not meet the mandatory inclusion criterion (history of diabetes). While they have risk factors (hypertension, obesity) and chest pain, the absence of diabetes disqualifies them. Exclusion criteria do not apply (no medication use for chest pain, no inability to exercise, no prior heart disease).",
+            "eligibility_score_E": -25.0
+        },
+        "NCT00979199": {
+            "relevance_explanation": "The patient's presentation (chest pain, risk factors) is relevant to ischemic heart disease (IHD), the trial's focus. However, the absence of exercise stress test results\u2014critical for confirming intermediate risk per the inclusion criterion\u2014limits full relevance confirmation.",
+            "relevance_score_R": 70.0,
+            "eligibility_explanation": "The patient fails the inclusion criterion (no stress test data) and is excluded due to de novo angina (exclusion criterion 6). While other exclusion criteria do not apply, these two factors decisively render the patient ineligible.",
+            "eligibility_score_E": -70.0
+        },
+        "NCT01407146": {
+            "relevance_explanation": "The patient presents with symptoms suggestive of acute coronary syndrome (chest pain, nausea, diaphoresis) which aligns with the trial's focus on care-seeking behavior in heart attack/ACS patients. However, the trial specifically studies post-event decision-making through an internet survey, while the patient is still in the acute phase of evaluation in the ER. This creates partial relevance as the patient's situation matches the target condition but not necessarily the study's specific behavioral research context.",
+            "relevance_score_R": 70.0,
+            "eligibility_explanation": "The patient meets the only explicit exclusion criterion (age >21) and has no documented exclusions. However, the trial's core inclusion requirements (confirmed ACS diagnosis, ability to complete web-based survey) are not fully addressed in the note. While she appears eligible based on available information, the lack of confirmed ACS diagnosis and unspecified survey capability (despite claim of protocol compliance) introduces uncertainty.",
+            "eligibility_score_E": 50.0
+        }
+    }
+}

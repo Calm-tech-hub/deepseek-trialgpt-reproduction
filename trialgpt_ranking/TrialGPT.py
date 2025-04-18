@@ -10,11 +10,19 @@ import time
 import os
 
 from openai import AzureOpenAI
+from openai import OpenAI
 
-client = AzureOpenAI(
-	api_version="2023-09-01-preview",
-	azure_endpoint=os.getenv("OPENAI_ENDPOINT"),
-	api_key=os.getenv("OPENAI_API_KEY"),
+import re
+
+# client = AzureOpenAI(
+# 	api_version="2023-09-01-preview",
+# 	azure_endpoint=os.getenv("OPENAI_ENDPOINT"),
+# 	api_key=os.getenv("OPENAI_API_KEY"),
+# )
+
+client = OpenAI(
+    base_url="https://api.ppinfra.com/v3/openai",
+    api_key="sk_8jOsRemta_Wn35bEZt3ZNEkwrQWtJ-Fw8NvIKVwcNes",
 )
 
 def convert_criteria_pred_to_string(
@@ -114,7 +122,20 @@ def trialgpt_aggregation(patient: str, trial_results: dict, trial_info: dict, mo
 		temperature=0,
 	)
 	result = response.choices[0].message.content.strip()
-	result = result.strip("`").strip("json")
+
+	think_index = result.find("<think>")
+
+	if think_index != -1:
+		end_think_index = result.find("</think>")
+		if end_think_index != -1:
+			result = result[:think_index] + result[end_think_index + len("</think>"):]
+	# print(f"result: {result}")
+	match = re.search(r'```json\s*(.*?)\s*```', result, re.DOTALL)
+	if match:
+		result = match.group(1).strip()
+	
+
+	# result = result.strip("`").strip("json")
 	result = json.loads(result)
 
 	return result

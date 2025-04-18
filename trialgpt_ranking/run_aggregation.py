@@ -13,6 +13,31 @@ import time
 
 from TrialGPT import trialgpt_aggregation
 
+def clean_trial_results(trial_results):
+    """Clean the trial results by extracting only the JSON data."""
+    cleaned = {}
+    for key in ["inclusion", "exclusion"]:
+        if key not in trial_results:
+            continue
+            
+        # Extract JSON content
+        content = trial_results[key]
+        if isinstance(content, str):
+            # Remove thinking process
+            if "<think>" in content:
+                content = content.split("</think>")[-1].strip()
+            # Extract JSON from markdown code block if present
+            if "```json" in content:
+                content = content.split("```json")[-1].split("```")[0].strip()
+            # Parse the JSON string
+            try:
+                content = json.loads(content)
+            except json.JSONDecodeError:
+                print(f"Failed to parse JSON for {key}")
+                continue
+        cleaned[key] = content
+    return cleaned
+
 if __name__ == "__main__":
 	corpus = sys.argv[1] 
 	model = sys.argv[2]
@@ -52,6 +77,9 @@ if __name__ == "__main__":
 				
 			# trial-level
 			for trial_id, trial_results in trials.items():
+				# print(f"processing {patient_id} {trial_id}")
+				trial_results = clean_trial_results(trial_results)
+				# print(trial_results)
 				# already cached results
 				if trial_id in output[patient_id]:
 					continue
@@ -67,12 +95,14 @@ if __name__ == "__main__":
 				# specific trial information
 				trial_info = trial2info[trial_id]	
 
-				try:
-					result = trialgpt_aggregation(patient, trial_results, trial_info, model)
-					output[patient_id][trial_id] = result 
+				# try:
+				result = trialgpt_aggregation(patient, trial_results, trial_info, model)
+				print(result)
+				output[patient_id][trial_id] = result 
 
-					with open(output_path, "w") as f:
-						json.dump(output, f, indent=4)
+				with open(output_path, "w") as f:
+					json.dump(output, f, indent=4)
 
-				except:
-					continue
+				# except:
+				# 	print("fail")
+				# 	continue
