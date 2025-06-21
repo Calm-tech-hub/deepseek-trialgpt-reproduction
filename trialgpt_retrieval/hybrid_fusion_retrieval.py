@@ -126,14 +126,15 @@ if __name__ == "__main__":
 	medcpt_wt = int(sys.argv[5])
 
 	# how many to rank
-	N = 2000 
+	# N = 100
+	N = int(sys.argv[6])
 
 	# loading the qrels
 	_, _, qrels = GenericDataLoader(data_folder=f"dataset/{corpus}/").load(split="test")
 
 	# loading all types of queries
 	# id2queries = json.load(open(f"dataset/{corpus}/id2queries.json"))
-	id2queries = json.load(open(f"/data/kmxu/TrialGPT/results/retrieval_keywords_deepseek/deepseek-r1/community_{corpus}.json"))
+	id2queries = json.load(open(f"/data/kmxu/TrialGPT/results/retrieval_keywords_{q_type}/{corpus}.json"))
 
 	# loading the indices
 	bm25, bm25_nctids = get_bm25_corpus_index(corpus)
@@ -144,8 +145,12 @@ if __name__ == "__main__":
 	tokenizer = AutoTokenizer.from_pretrained(QUERY_ENCODER_PATH)
 	
 	# then conduct the searches, saving top 1k
-	output_path = f"results/qid2nctids_results_{q_type}_{corpus}_k{k}_bm25wt{bm25_wt}_medcptwt{medcpt_wt}_N{N}.json"
-	
+	if bm25_wt == 0:
+		output_path = f"results/qid2nctids_results_{q_type}_{corpus}_k{k}_bm25wt{bm25_wt}_medcptwt{medcpt_wt}_medcpt.json"
+	elif medcpt_wt == 0:
+		output_path = f"results/qid2nctids_results_{q_type}_{corpus}_k{k}_bm25wt{bm25_wt}_medcptwt{medcpt_wt}_bm25_wt.json"
+	else:
+		output_path = f"results/qid2nctids_results_{q_type}_{corpus}_k{k}_bm25wt{bm25_wt}_medcptwt{medcpt_wt}_hybrid.json"
 	qid2nctids = {}
 	recalls = []
 
@@ -241,15 +246,23 @@ if __name__ == "__main__":
 	metrics_path = output_path.replace(".json", "_metrics.json")
 	metrics = {
     	"average_recall": average_recall,
-    	"recall_per_query": recalls,
-    	"parameters": {
-        	"corpus": corpus,
-        	"query_type": q_type,
-        	"k": k,
-        	"bm25_weight": bm25_wt,
-       		"medcpt_weight": medcpt_wt,
-        	"N": N
-    	}
+    	# "recall_per_query": recalls,
+    	# "parameters": {
+        # 	"corpus": corpus,
+        # 	"query_type": q_type,
+        # 	"k": k,
+        # 	"bm25_weight": bm25_wt,
+       	# 	"medcpt_weight": medcpt_wt,
+        # 	"N": N
+    	# }
 	}
-	with open(metrics_path, "w") as f:
-		json.dump(metrics, f, indent=4)
+	with open(metrics_path, "a") as f:
+		json.dump(average_recall, f, indent=4)
+
+		f.write(",")
+		f.write("\n")
+		f.write("\n")
+		f.write("\n")
+		f.write("\n")
+		f.write("\n")
+
